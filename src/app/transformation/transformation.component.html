@@ -2,41 +2,127 @@
   <app-nav-transform></app-nav-transform>
 </section>
 <section>
-  <div class="row bg-primary-subtle">
+  <div class="row bg-primary-subtle pt-3">
     <div class="col-lg-5 row align-items-center py-2">
-      <label for="branch" class="col-2 text-center">الفرع</label>
+      <label for="branch" class="col-2 text-primary text-center">الفرع</label>
       <input type="number" class="col-4" id="branch" placeholder="رقم الفرع">
       <i class="fa-solid fa-magnifying-glass col-1 p-2 d-flex justify-content-center align-items-center" role="button"></i>
       <input type="text" class="col-5" placeholder="إسم الفرع">
     </div>
     <div class="col-lg-4 row align-items-center">
-      <label for="user" class="col-3 text-center">المستخدم</label>
+      <label for="user" class="col-3 text-primary text-center">المستخدم</label>
       <input type="number" class="col-3 ms-2" id="user" placeholder="الرقم">
       <input type="text" class="col-5" placeholder="إسم المستخدم">
     </div>
     <div class="col-lg-3 row align-items-center mt-2 mt-lg-0">
-      <label for="time" class="col-5 text-center">الوقت</label>
+      <label for="time" class="col-5 text-primary text-center">الوقت</label>
       <input type="time" class="col-7" id="time" placeholder="الوقت">
     </div>
   </div>
-  <div class="row bg-primary-subtle">
+  <div class="row bg-primary-subtle py-3">
     <div class="col-lg-7 row align-items-center py-2">
       <div class="col-md-6 row">
-        <label for="branch" class="col-4 text-center">رقم المستند</label>
+        <label for="branch" class="col-4 text-primary text-center">رقم المستند</label>
         <input type="number" class="col-8" id="branch" placeholder="رقم المستند">
       </div>
       <div class="col-md-6 row">
-        <label for="branch" class="col-4 text-center">تاريخ المستند</label>
+        <label for="branch" class="col-4 text-primary text-center">تاريخ المستند</label>
         <input type="date" class="col-8" id="branch" placeholder="التاريخ">
       </div>
     </div>
     <div class="col-lg-3 row align-items-center mt-2 mt-lg-0">
-      <label for="time" class="col-5 text-center">الوقت</label>
-      <input type="time" class="col-7" id="time" placeholder="الوقت">
+      <label for="check" class="col-5 text-primary text-center">رقم الفاتوره اليدوي</label>
+      <input type="number" class="col-7" id="check" >
     </div>
     <div class="col-lg-2 row align-items-center mt-2 mt-lg-0">
-      <label for="time" class="col-5 text-center">الوقت</label>
-      <input type="time" class="col-7" id="time" placeholder="الوقت">
+      <label for="status" class="col-7 text-primary text-center">حالة السند</label>
+      <input type="text" class="col-5" id="status">
+    </div>
+    <hr class="mt-3">
+    <!-- ================================================================================= -->
+    <div class="col-lg-8 row align-items-center mt-2">
+      <label for="branch2" class="col-2 text-primary text-center fw-bold">من فرع</label>
+      <input type="number" class="col-2" id="branch2" placeholder="رقم الفرع">
+      <i class="fa-solid fa-magnifying-glass col-1 p-2 d-flex justify-content-center align-items-center" role="button"></i>
+      <input type="text" class="col-7" placeholder="إسم الفرع">
+    </div>
+    <div class="col-lg-8 row align-items-center mt-2">
+      <label for="storage" class="col-2 text-primary text-center">من مخزن</label>
+      <input type="number" class="col-2" id="storage" placeholder="رقم المخزن">
+      <i class="fa-solid fa-magnifying-glass col-1 p-2 d-flex justify-content-center align-items-center" role="button"></i>
+      <input type="text" class="col-7" placeholder="إسم المخزن">
+    </div>
+    <div class="col-lg-4 row align-items-center mt-2">
+      <label for="recieveNumber" class="col-7 text-primary text-center">رقم سند الاستلام في الفرع</label>
+      <input type="number" class="col-5" id="recieveNumber">
+    </div>
+    <div class="col-lg-8 row align-items-center mt-2">
+      <label for="branch3" class="col-2 text-primary text-center fw-bold">إلى فرع</label>
+      <input type="number" class="col-2" id="branch3" placeholder="رقم الفرع">
+      <i class="fa-solid fa-magnifying-glass col-1 p-2 d-flex justify-content-center align-items-center" role="button"></i>
+      <input type="text" class="col-7" placeholder="إسم الفرع">
+    </div>
+    <div class="col-lg-8 row align-items-center mt-2">
+      <label for="storage2" class="col-2 text-primary text-center">إلى مخزن</label>
+      <input type="number" class="col-2" id="storage2" placeholder="رقم المخزن">
+      <i class="fa-solid fa-magnifying-glass col-1 p-2 d-flex justify-content-center align-items-center" role="button"></i>
+      <input type="text" class="col-7" placeholder="إسم المخزن">
+    </div>
+    <div class="col-lg-4 row align-items-center mt-2 justify-content-between">
+      <label for="request" class="col-4 btn btn-primary fw-bold text-center me-lg-5" role="button">طلب المواد</label>
+      <input type="text" class="col-5" id="request">
+    </div>
+    <div class="col-lg-8 row align-items-center mt-2">
+      <label for="notes" class="col-2 text-primary text-center">ملاحظات</label>
+      <input type="text" class="col-10" id="notes" placeholder="رقم المخزن">
     </div>
   </div>
+</section>
+<section>
+  <table class="table border-primary-subtle table-bordered text-center text-primary mt-2">
+    <thead>
+      <tr>
+        <th class="titles"></th>
+        <th class="titles">رصيد الصنف</th>
+        <th class="titles">رقم الصنف</th>
+        <th class="titles">إسم الصنف</th>
+        <th class="titles">الوحدة</th>
+        <th class="titles">الكمية</th>
+        <th class="titles">سعر الوحدة</th>
+        <th class="titles">الإجمالي</th>
+        <th class="titles">بونص</th>
+        <th class="titles">خصم</th>
+      </tr>
+      <tr>
+        <td class="text-primary titles">1</td>
+        <td class="text-primary"></td>
+        <td class="text-primary"></td>
+        <td class="text-primary"></td>
+        <td class="text-primary"></td>
+        <td class="text-primary"></td>
+        <td class="text-primary"></td>
+        <td class="text-primary">الإجمالي</td>
+        <td class="text-primary">بونص</td>
+        <td class="text-primary">خصم</td>
+      </tr>
+      <tr>
+        <td class="text-primary titles">2</td>
+        <td class="text-primary"></td>
+        <td class="text-primary"></td>
+        <td class="text-primary"></td>
+        <td class="text-primary"></td>
+        <td class="text-primary"></td>
+        <td class="text-primary"></td>
+        <td class="text-primary">الإجمالي</td>
+        <td class="text-primary">بونص</td>
+        <td class="text-primary">خصم</td>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
 </section>

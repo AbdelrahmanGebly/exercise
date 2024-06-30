@@ -1,4 +1,13 @@
 section
 {
   direction: rtl;
+  .titles{
+    background-color: rgb(42 42 222 / 41%);
+    color:#1818b7;
+    font-weight: bold;
+    cursor:default;
+    &:hover{
+      background-color: rgba(101, 101, 234, 0.41);;
+    }
+  }
 }
